@@ -16,7 +16,7 @@
         <?php include("~/../vue/header.php"); ?>
         <?php include("~/../vue/boot.php"); ?>
 
-        <form action="routeur.php" method="get" class="recherchePage">
+        <form action="index.php" method="get" class="recherchePage">
             <input type="hidden" name="action" value="recherche_recettes">
             <!--search bar-->
             <div class="search-bar">
@@ -78,7 +78,7 @@
                 ?>
                         <div class="col d-flex justify-content-center mt-6">
                             <div class="card" style="width: 18rem;">
-                                <a class='ref' href='routeur.php?action=detailsRecette&numRecette=<?php echo $recette->getNumRecette() ?>'>
+                                <a class='ref' href='index.php?action=detailsRecette&numRecette=<?php echo $recette->getNumRecette() ?>'>
 
                                     <img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($b) ?>" style="height:200px" alt="Image recette">
                                     <div class="row diff diffi">
@@ -89,8 +89,8 @@
                                     if (isset($_SESSION['role']) && $_SESSION['role'] == "Admin") {
                                     ?>
                                         <div class="admin-overlay">
-                                            <a href="routeur.php?action=deleteRecetteByNum&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="fas fa-trash trash"></i></a>
-                                            <a href="routeur.php?action=updateRecette&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="fas fa-edit edit"></i></a>
+                                            <a href="index.php?action=deleteRecetteByNum&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="fas fa-trash trash"></i></a>
+                                            <a href="index.php?action=updateRecette&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="fas fa-edit edit"></i></a>
                                         </div>
                                     <?php
                                     }

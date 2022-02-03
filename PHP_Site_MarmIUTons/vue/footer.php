@@ -36,9 +36,9 @@
             </span>
             </p>
             <p class="footer-links">
-                <a href="routeur.php?action=inscription">S'inscrire</a>
+                <a href="index.php?action=inscription">S'inscrire</a>
                 |
-                <a href="routeur.php?action=login">Se connecter</a>
+                <a href="index.php?action=login">Se connecter</a>
             </p>
         </div>
     </footer>

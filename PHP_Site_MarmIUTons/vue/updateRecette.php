@@ -22,7 +22,7 @@
 
         <div class="container" id="mb">
             <!--DEBUT PANEL-->
-            <form class="formMain" action="routeur.php" method="POST" enctype="multipart/form-data">
+            <form class="formMain" action="index.php" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="action" value="chosePathRecette">
                 <input type="hidden" name="numRecette" value="<?php echo $recette->getNumRecette() ?>">
 

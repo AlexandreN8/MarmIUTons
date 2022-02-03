@@ -13,7 +13,7 @@
     <div class="wrapper">
         <?php include("~/../vue/header.php"); ?>
 
-        <form class="container" action="routeur.php" method="POST">
+        <form class="container" action="index.php" method="POST">
             <input type="hidden" name="action" value="created">
             <div class="en-tete">
                 <span class='titre'>S'inscrire</span>
@@ -69,7 +69,7 @@
             <div class="btnSub">
                 <input type="submit" name="envoyer" value="S'inscrire">
             </div>
-            <a href="routeur.php?action=login">Deja inscrit ?</a>
+            <a href="index.php?action=login">Deja inscrit ?</a>
         </form>
     </div>
     <?php include("~/../vue/footer.php"); ?>

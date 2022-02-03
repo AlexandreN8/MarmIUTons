@@ -83,7 +83,7 @@ class controllerUtilisateur
         require("~/../vue/recette.php");
     }
     // Variable globale, besoin de la partager entre login() et upodateRole() 
-    // pour savoir si l'action vient du routeur
+    // pour savoir si l'action vient du index
     private static $fromUpdateRole = "";
 
     public static function profile()

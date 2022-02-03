@@ -15,7 +15,7 @@
         <?php include("~/../vue/header.php"); ?>
         <?php include("~/../vue/boot.php"); ?>
 
-        <form action="routeur.php" method="get" class="recherchePage">
+        <form action="index.php" method="get" class="recherchePage">
             <input type="hidden" name="action" value="recherche_recettes">
             <!--search bar-->
             <div class="search-bar">
@@ -93,16 +93,16 @@
                 ?>
                     <div class="col d-flex justify-content-center ">
                         <div class="card column-noboot" style="width: 18rem;" name='<?php echo $recette->getIdCategorie() ?>'>
-                            <a class='ref' href='routeur.php?action=detailsRecette&numRecette=<?php echo $recette->getNumRecette() ?>'>
+                            <a class='ref' href='index.php?action=detailsRecette&numRecette=<?php echo $recette->getNumRecette() ?>'>
                                 <?php
                                 // On affiche les option de modification pour les admins
                                 if (isset($_SESSION['role']) && $_SESSION['role'] == "Admin") {
                                 ?>
                                     <div class="admin-overlay">
                                         <span>Options admin : </span>
-                                        <a href="routeur.php?action=deleteRecetteByNum&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="far fa-times-circle cross"></i></a>
-                                        <a href='routeur.php?action=detailsRecette&numRecette=<?php echo $recette->getNumRecette() ?>'><i class="far fa-eye show"></i></a>
-                                        <a href="routeur.php?action=updateRecette&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="fas fa-edit edit"></i></a>
+                                        <a href="index.php?action=deleteRecetteByNum&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="far fa-times-circle cross"></i></a>
+                                        <a href='index.php?action=detailsRecette&numRecette=<?php echo $recette->getNumRecette() ?>'><i class="far fa-eye show"></i></a>
+                                        <a href="index.php?action=updateRecette&numRecette=<?php echo $recette->getNumRecette() ?>"><i class="fas fa-edit edit"></i></a>
                                     </div>
                                 <?php
                                 }

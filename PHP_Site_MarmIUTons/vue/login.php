@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <?php include("~/../vue/header.php"); ?>
-        <form class="container" action="routeur.php" method="post">
+        <form class="container" action="index.php" method="post">
             <input type="hidden" name="action" value="connectionUser">
             <div class="en-tete">
                 <span class='titre'>Se connecter</span>
@@ -39,7 +39,7 @@
             </div>
             <a href="#">Mot de passe oublié</a>
             <br>
-            <a href="routeur.php?action=inscription">Pas encore inscrit ?</a>
+            <a href="index.php?action=inscription">Pas encore inscrit ?</a>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

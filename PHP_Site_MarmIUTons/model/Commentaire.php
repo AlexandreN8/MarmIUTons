@@ -193,7 +193,7 @@ class Commentaire
 
             $adminHTML = '  
                     <div class="admin-overlay">
-                        <a href="routeur.php?action=deleteCommentaire&numRecette=' . $numRecette . '&idCommentaire=' . $comment["idCommentaire"] . '">
+                        <a href="index.php?action=deleteCommentaire&numRecette=' . $numRecette . '&idCommentaire=' . $comment["idCommentaire"] . '">
                         <i class="fas fa-trash" id="trash" style="float:right;"></i></a>
                     </div>';
         }

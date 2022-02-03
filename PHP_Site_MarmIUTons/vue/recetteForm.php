@@ -23,7 +23,7 @@
         <?php include("~/../vue/header.php"); ?>
         <div class="container" id="mb">
             <!--Modal de selection de box-->
-            <form action="routeur.php" method="POST">
+            <form action="index.php" method="POST">
                 <input type="hidden" name="action" value="defineEtapeBox">
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -46,7 +46,7 @@
             </form>
             <!--Fin modal selection de box-->
             <!--DEBUT PANEL-->
-            <form class="formMain" action="routeur.php" method="POST" enctype="multipart/form-data">
+            <form class="formMain" action="index.php" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="action" value="chosePathRecette">
                 <div class="container w-60" id="container-tab-form">
                     <div class="row justify-content-center p-5 " id="header-pnl">

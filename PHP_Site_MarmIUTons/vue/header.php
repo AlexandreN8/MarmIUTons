@@ -22,7 +22,7 @@
                     </button>
                     <div class="collapse navbar-collapse navbarCollapse">
                         <div class="navbar-nav">
-                            <a href="routeur.php" class="navbar-brand d-flex justify-content-start fs-1">Marm<span style="color:#00b4cc;">IUT</span>ons</a>
+                            <a href="index.php" class="navbar-brand d-flex justify-content-start fs-1">Marm<span style="color:#00b4cc;">IUT</span>ons</a>
 
                         </div>
                         <div class="navbar-nav ms-auto d-flex justify-content-end">
@@ -30,13 +30,13 @@
                             <?php
                             if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
                             ?>
-                                <a href=" routeur.php?action=afficherRecetteForm" style="background-color: #55acee;" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true"><i class="fa fa-plus"></i> Recette</a>
-                                <a href="routeur.php?action=profile" class="btn btn-primary btn-lg marginSecondary" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-user"></i> Profile</a>
+                                <a href=" index.php?action=afficherRecetteForm" style="background-color: #55acee;" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true"><i class="fa fa-plus"></i> Recette</a>
+                                <a href="index.php?action=profile" class="btn btn-primary btn-lg marginSecondary" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-user"></i> Profile</a>
                             <?php
                             } else {
                             ?>
-                                <a href="routeur.php?action=inscription" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-user-plus"></i> Inscription</a>
-                                <a href="routeur.php?action=login" class="btn btn-secondary btn-lg marginSecondary" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+                                <a href="index.php?action=inscription" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-user-plus"></i> Inscription</a>
+                                <a href="index.php?action=login" class="btn btn-secondary btn-lg marginSecondary" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-sign-in-alt"></i> Connexion</a>
                             <?php
                             }
                             ?>
@@ -46,13 +46,13 @@
                 <div class="justify-content-lg-center fs-4">
                     <div class="collapse navbar-collapse navbarCollapse">
                         <div class="navbar-nav d-flex align-items-center">
-                            <a href="routeur.php?action=recherche_recettes&sTag=Catégorie&sIng=Ingrédient&terme=facile" class="nav-item nav-link">Idée facile</a>
-                            <a href="routeur.php?action=recherche_recettes&sTag=Catégorie&sIng=chocolat&terme=" class="nav-item nav-link">Idée chocolat</a>
-                            <a href="routeur.php" class="nav-item nav-link">
+                            <a href="index.php?action=recherche_recettes&sTag=Catégorie&sIng=Ingrédient&terme=facile" class="nav-item nav-link">Idée facile</a>
+                            <a href="index.php?action=recherche_recettes&sTag=Catégorie&sIng=chocolat&terme=" class="nav-item nav-link">Idée chocolat</a>
+                            <a href="index.php" class="nav-item nav-link">
                                 <span class="recette-link">Recettes</span>
                             </a>
-                            <a href="routeur.php?action=recherche_recettes&sTag=Poisson&sIng=Ingrédient&terme=" class="nav-item nav-link">Idée poisson</a>
-                            <a href="routeur.php?action=recherche_recettes&sTag=Viande&sIng=Ingrédient&terme=" class="nav-item nav-link">Idée viande</a>
+                            <a href="index.php?action=recherche_recettes&sTag=Poisson&sIng=Ingrédient&terme=" class="nav-item nav-link">Idée poisson</a>
+                            <a href="index.php?action=recherche_recettes&sTag=Viande&sIng=Ingrédient&terme=" class="nav-item nav-link">Idée viande</a>
                         </div>
                     </div>
                 </div>

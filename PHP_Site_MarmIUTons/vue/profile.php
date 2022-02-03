@@ -17,7 +17,7 @@
         <!--Modal administrateur si changement de role validé ou non -->
         <div class="main-container">
             <?php
-            if ($showModal) { // Si l'action du routeur provient de la fonction updateRole on affiche le resultat de cette action
+            if ($showModal) { // Si l'action du index provient de la fonction updateRole on affiche le resultat de cette action
             ?>
                 <div class="modal" tabindex="-1" id="success">
                     <div class="modal-dialog">
@@ -53,7 +53,7 @@
                     <img class="img1" src="<?php if (isset($_SESSION['photo'])) {
                                                 echo "{$_SESSION['photo']}";
                                             } else  echo '~/../images/3.jpg' ?>" width="200">
-                    <form action="routeur.php" method="POST" enctype="multipart/form-data">
+                    <form action="index.php" method="POST" enctype="multipart/form-data">
                         <input type="hidden" name="action" value="chosePathRecette">
                     </form>
                 </div>
@@ -61,7 +61,7 @@
                     <h3 class="name"><?php echo " Pseudo : {$lesInfos->getLogin()}" ?></h3>
                     <h3>Titre : <?php echo "{$lesInfos->getRole()}" ?></h3>
                 </div>
-                <form action="routeur.php?action=signout" method="POST">
+                <form action="index.php?action=signout" method="POST">
                     <button class="option">
                         <div class="notif"><i class="fas fa-sign-out-alt"></i></div>
                     </button>
@@ -80,7 +80,7 @@
                             </p>
                         </div>
                         <div class="comu-btn">
-                            <button class="creer" onclick="location.href='routeur.php?action=afficherRecetteForm'">
+                            <button class="creer" onclick="location.href='index.php?action=afficherRecetteForm'">
                                 <i class="fa fa-plus"></i>Recette
                             </button>
                         </div>
@@ -136,7 +136,7 @@
                                                     $i = 0;
                                                     foreach ($lesUtilisateurs as $user) {
                                                     ?>
-                                                        <form action="routeur.php" method="POST">
+                                                        <form action="index.php" method="POST">
                                                             <input type="hidden" name="action" value="updateRole">
                                                             <div class="input-group mt-2">
                                                                 <span class="input-group-text w-80">
@@ -207,9 +207,9 @@
                                             <td><?php echo $recette->getNomRecette(); ?></td>
                                             <td class="hide640"><?php echo $recette->getPublicJoin('niveau'); ?></td>
                                             <td class="hide"><?php echo $recette->getDateModification(); ?></td>
-                                            <td><a class="hideLabel" href="<?php echo "routeur.php?action=detailsRecetteFromProfil&nomRecette={$recette->getNomRecette()}" ?>"><i class="far fa-eye"></i></a></td>
-                                            <td><a class="hideLabel" href="<?php echo "routeur.php?action=updateRecette&nomRecette={$recette->getNomRecette()}" ?>">edit <i class="fas fa-pen"></i></a></td>
-                                            <td><a class="hideLabel" href="<?php echo "routeur.php?action=deleteRecetteUser&nomRecette={$recette->getNomRecette()}" ?>">Supprimer <i class="fas fa-times"></i></a></td>
+                                            <td><a class="hideLabel" href="<?php echo "index.php?action=detailsRecetteFromProfil&nomRecette={$recette->getNomRecette()}" ?>"><i class="far fa-eye"></i></a></td>
+                                            <td><a class="hideLabel" href="<?php echo "index.php?action=updateRecette&nomRecette={$recette->getNomRecette()}" ?>">edit <i class="fas fa-pen"></i></a></td>
+                                            <td><a class="hideLabel" href="<?php echo "index.php?action=deleteRecetteUser&nomRecette={$recette->getNomRecette()}" ?>">Supprimer <i class="fas fa-times"></i></a></td>
                                         </tr>
                                     <?php
                                     }
@@ -285,7 +285,7 @@
                                         <div class="card-body tab-content border-0 shadow">
                                             <div class="tab-pane active" id="profile">
                                                 <h3>Profile</h3>
-                                                <form action="routeur.php" method="post">
+                                                <form action="index.php" method="post">
                                                     <input type="hidden" name="action" value="modifierProfile">
                                                     <div class="mb-3">
                                                         <label for="nameControl" class="form-label">Modifier votre nom</label>
@@ -312,7 +312,7 @@
                                             </div>
                                             <div class="tab-pane" id="securite">
                                                 <h3>Sécurité</h3>
-                                                <form action="routeur.php" method="post">
+                                                <form action="index.php" method="post">
                                                     <input type="hidden" name="action" value="modifierProfileSecu">
                                                     <div class="mb-3">
                                                         <label for="mailControl" class="form-label">Modifier votre email</label>
