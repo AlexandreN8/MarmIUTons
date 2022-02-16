@@ -1,5 +1,6 @@
 # MarmIUTons
-JS/HTML/PHP/BS
+JS/HTML/PHP/BS 
+Design Pattern => Modèle-Vue-Contrôleur
 
 Projet scolaire permettant de partager des recettes et de créer une communauté.
 Ce projet a été réalisé en 6 semaines en mettant davantage l'accent sur les fonctionnalités PHP/Base de données plutôt que le design.
@@ -15,7 +16,7 @@ Voici un aperçu du site en image =>
 
 ![Landing](/MarmIUTonsPictures/cards.PNG)
 
-# La vue détaillé d'une recette :
+# La vue détaillée d'une recette :
 
 ![Landing](/MarmIUTonsPictures/details.PNG)
 
@@ -27,7 +28,7 @@ Voici un aperçu du site en image =>
 
 ![Landing](/MarmIUTonsPictures/login.PNG)
 
-# Le page de profil d'un administrateur :
+# La page de profil d'un administrateur :
 
 ![Landing](/MarmIUTonsPictures/profil.PNG)
 ![Landing](/MarmIUTonsPictures/profil2.PNG)
@@ -40,7 +41,7 @@ Voici un aperçu du site en image =>
 
 ![Landing](/MarmIUTonsPictures/Update.PNG)
 
-# L'ajout d'ingrédient réalisé coté client via ajax :
+# L'ajout d'ingrédient réalisé côté client via Ajax :
 
 ![Landing](/MarmIUTonsPictures/ajax.PNG)
 
